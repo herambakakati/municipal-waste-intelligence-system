@@ -173,10 +173,10 @@ if st.button("🚀 Generate Prediction"):
     total_cost = waste_pred * cost_per_ton
 
     # STATUS LOGIC
-    if waste_pred < 4000:
+    if waste_pred < 2865:
         status, color = "🟢 Efficient", "#22c55e"
         msg = "Low waste generation indicates efficient municipal operations."
-    elif waste_pred < 7000:
+    elif waste_pred < 7757:
         status, color = "🟡 Moderate Load", "#facc15"
         msg = "Waste levels are moderate and require optimization."
     else:
@@ -216,6 +216,8 @@ if st.button("🚀 Generate Prediction"):
     👉 {msg}
     </p>
     """, unsafe_allow_html=True)
+
+    
 
 # -------------------------------
 # FOOTER
