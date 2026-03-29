@@ -138,9 +138,13 @@ with col2:
 
 with col3:
     cost_per_ton = st.number_input("Cost per Ton (₹)", 500, 5000, 2500)
-    waste_type = st.selectbox("Waste Type", ["Organic","Plastic","E-Waste","Hazardous"])
-    disposal = st.selectbox("Disposal Method", ["Recycling","Landfill","Incineration"])
+    #waste_type = st.selectbox("Waste Type", ["Organic","Plastic","E-Waste","Hazardous"])
+    #disposal = st.selectbox("Disposal Method", ["Recycling","Landfill","Incineration"])
+    waste_type = st.selectbox("Waste Type", 
+    ["Organic","Plastic","E-Waste","Hazardous","Construction"])
 
+    disposal = st.selectbox("Disposal Method", 
+    ["Recycling","Landfill","Incineration","Composting"])
 # -------------------------------
 # PREPARE INPUT
 # -------------------------------
